@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nishi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff5f8;
+    overflow:hidden;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:min(92vw,900px);
+    padding:40px;
+    animation:fadeIn 2s ease;
+}
+
+.name{
+    font-family:'Parisienne', cursive;
+    font-size:10rem;
+    line-height:1;
+    color:#ff4f8b;
+    text-shadow:0 4px 14px rgba(255,79,139,0.18);
+    margin-bottom:8px;
+}
+
+.message{
+    font-family:Segoe UI, sans-serif;
+    font-size:1.45rem;
+    font-weight:600;
+    color:#ff4f8b;
+    line-height:1.5;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.next{
+    padding:14px 36px;
+    border:none;
+    border-radius:18px;
+    background:#ff4f8b;
+    color:white;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<div class="name">
+    Nishi
+</div>
+
+<div class="message">
+    I am really happy to see you.
+</div>
+
+<button
+    class="next"
+    onclick="window.location.href='page3.html'">
+    Continue
+</button>
+```
+
+</div>
+
+</body>
+
+</html>
